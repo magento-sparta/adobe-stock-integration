@@ -11,7 +11,7 @@
         "magento/module-adobe-stock-client": "1.2.0-alpha2",
         "magento/module-adobe-stock-client-api": "2.0.0-alpha2",
         "magento/module-adobe-stock-admin-ui": "1.2.0-alpha2",
-        "magento/adobe-ims": "*"
+        "magento/adobe-ims": "2.1.0-alpha2"
     },
     "version": "2.1.0-alpha2",
     "minimum-stability": "alpha",
