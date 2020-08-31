@@ -1,4 +1,4 @@
-{§
+{
     "name": "magento/module-adobe-stock-image-admin-ui",
     "description": "Magento module responsible for the admin panel images UI implementation",
     "require": {
