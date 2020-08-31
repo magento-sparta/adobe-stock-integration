@@ -1,10 +1,10 @@
-{
+{§
     "name": "magento/module-adobe-stock-image-admin-ui",
     "description": "Magento module responsible for the admin panel images UI implementation",
     "require": {
         "php": "~7.3.0||~7.4.0",
         "magento/framework": "*",
-        "magento/module-adobe-ims": "2.2.*",
+        "magento/module-adobe-ims": "2.1.*",
         "magento/module-adobe-ims-api": "2.1.*",
         "magento/module-adobe-stock-asset-api": "1.2.*",
         "magento/module-adobe-stock-image-api": "1.2.*",
