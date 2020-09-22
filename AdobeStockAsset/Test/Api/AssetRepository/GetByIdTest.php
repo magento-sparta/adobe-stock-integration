@@ -18,7 +18,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\TestCase\WebapiAbstract;
 
 /**
- * Class GetByIdTest
+ * Class get by id asset webapi
  */
 class GetByIdTest extends WebapiAbstract
 {
@@ -84,7 +84,7 @@ class GetByIdTest extends WebapiAbstract
                 self::assertEquals(Exception::HTTP_NOT_FOUND, $e->getCode());
             } elseif (constant('TESTS_WEB_API_ADAPTER') === self::ADAPTER_SOAP) {
                 $this->assertInstanceOf('SoapFault', $e);
-                $this->checkSoapFault($e, $expectedMessage, 'env:Sender', [1 => $notExistedAssetId]);
+                $this->checkSoapFault($e, $expectedMessage, 'env:Sender', ['id' => $notExistedAssetId]);
             } else {
                 throw $e;
             }

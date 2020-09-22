@@ -17,14 +17,26 @@ use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\TestCase\WebapiAbstract;
 
 /**
- * Class SearchExecuteTest
- * @package Magento\AdobeStockImage\Test\Api
+ * Class search execute test webapi
  */
 class SearchExecuteTest extends WebapiAbstract
 {
     private const RESOURCE_PATH = '/V1/adobestock/search';
     private const SERVICE_NAME = 'adobeStockImageApiGetImageListV1';
 
+    /**
+     * @inheridoc
+     */
+    protected function setUp(): void
+    {
+        $this->markTestSkipped("The test requires adobe stock credentials and cannot be currently executed on CICD");
+    }
+
+    /**
+     * Test search WEB API method.
+     *
+     * @return void
+     */
     public function testSearchExecute(): void
     {
         /** @var SearchCriteriaBuilder $searchCriteriaBuilder */
